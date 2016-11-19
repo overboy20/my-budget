@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/categories', 'CategoryController@index');
+Route::post('categories/add', 'CategoryController@doAdd');
+//Route::post('/categories/add', 'CategoryController@doAdd');
